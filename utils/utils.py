@@ -1,11 +1,11 @@
 #####
-## JunkOS Bot utils fonctions
+## Junk Bot utils fonctions
 #####
 import time
 import sys
 from conf import *
 
-# JunkOS print
+# Junk print
 def jprint(output):
     jdivider()
     print(conf.botName + " : ")

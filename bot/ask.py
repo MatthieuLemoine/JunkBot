@@ -1,5 +1,5 @@
 #####
-## JunkOS Bot IA Ask process
+## Junk Bot IA Ask process
 #####
 from datetime import datetime
 from conf import *

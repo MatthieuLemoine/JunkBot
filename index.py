@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 
 #####
-## JunkOS Bot
+## Junk Bot
+## A junk but awesome bot
 #####
+
 import time
 import sys
 from utils import *

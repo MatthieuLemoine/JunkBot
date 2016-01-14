@@ -1,5 +1,5 @@
 #####
-## JunkOS Bot IA Answer process
+## Junk Bot IA Answer process
 #####
 import os
 from datetime import datetime

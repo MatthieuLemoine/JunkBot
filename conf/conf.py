@@ -1,7 +1,7 @@
 #####
-## JunkOS Bot Configuration
+## Junk Bot Configuration
 #####
 
-botName = 'JunkOS'
+botName = 'Junk'
 botVersion = 'v0.1'
 adminName = 'Matthieu Lemoine'
