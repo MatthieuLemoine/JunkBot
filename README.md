@@ -11,3 +11,8 @@ He's quite dumb but be gentle ! He only tries to help !
 You can change Junk Bot's name : Junk Bot is so dumb that he can forget his own name !
 
 You also can change the admin name : Junk Bot is so dumb that he thinks all human are named Matthieu Lemoine !
+
+## TODO
+
+- Dictionaries
+- Interactive configuration
