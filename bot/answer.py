@@ -21,10 +21,12 @@ def command(userInput):
         utils.jprint('Allright Sir. I reboot the computer for you')
         utils.jsysprint('Rebooting computer...')
         os.system('sudo shutdown -r now')
+        return False
     elif 'shutdown' in userInput:
         utils.jprint('Allright Sir. I shutdown the computer for you')
         utils.jsysprint('Computer shutdown...')
         os.system('sudo shutdown -h now')
+        return False
     elif ('stop' in userInput) | ('goodbye' in userInput) | ('sleep' in userInput):
         currentHour = datetime.now().hour
         greeting = 'Have a nice day.'
@@ -34,5 +36,7 @@ def command(userInput):
             greeting = 'Have a nice evening.'
         utils.jprint('Goodbye Sir. '+greeting)
         exit(0)
+        return False
     else:
         utils.jprint(junkIa)
+        return True

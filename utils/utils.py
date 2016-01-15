@@ -51,7 +51,7 @@ def jmode(output):
 
 def jprogressbar(step):
     for i in range(101):
-        time.sleep(0.1)
+        time.sleep(0.05)
         if (i % step) == 0:
             progress = '#' * (i//step) + ' '*(100//step-(i//step))
         sys.stdout.write("\r[%s]%d%%" % (progress,i))

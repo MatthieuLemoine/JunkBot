@@ -4,6 +4,7 @@
 from datetime import datetime
 from conf import *
 from utils import *
+import bot.answer as answer
 
 def greetings():
     # TODO check meteo
@@ -15,5 +16,10 @@ def greetings():
         greeting = 'Good afternoon'
     utils.jprint(greeting+' '+conf.adminName+'.\nHow are you today ?')
 
-def command():
+def askCommand():
     utils.jprint('How can I help you today ?')
+
+def askLoop():
+    askCommand()
+    userInput = utils.jinput()
+    return answer.command(userInput)

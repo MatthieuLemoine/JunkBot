@@ -26,6 +26,6 @@ answer.greetings(userInput)
 
 # Commands
 utils.jmode("Command mode enabled")
-ask.command()
-userInput = utils.jinput()
-answer.command(userInput)
+
+while ask.askLoop():
+    pass
