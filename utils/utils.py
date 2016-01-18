@@ -3,7 +3,8 @@
 #####
 import time
 import sys
-from conf import *
+import os
+import conf.conf as conf
 
 # Junk print
 def jprint(output):
@@ -30,7 +31,7 @@ def jinput():
     print(conf.adminName + " : ")
     userInput = sys.stdin.readline().lower()
     jdivider()
-    return userInput
+    return normalizeInput(userInput)
 
 def jldivider():
     time.sleep(0.1)
@@ -57,3 +58,9 @@ def jprogressbar(step):
         sys.stdout.write("\r[%s]%d%%" % (progress,i))
         sys.stdout.flush()
     print('')
+
+# Meaningless words
+stop_list = ['a','an','the','this','these','those','which','that','for','of','to','in']
+
+def normalizeInput(userInput):
+    return ' '.join([word for word in userInput.lower().split() if word not in stop_list])

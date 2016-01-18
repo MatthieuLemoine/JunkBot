@@ -16,3 +16,5 @@ You also can change the admin name : Junk Bot is so dumb that he thinks all huma
 
 - Dictionaries
 - Interactive configuration
+- Add Commands
+- Create a module system to add commands

@@ -7,8 +7,8 @@
 
 import time
 import sys
-from utils import *
-from conf import *
+import utils.utils as utils
+import conf.conf as conf
 import bot.answer as answer
 import bot.ask as ask
 

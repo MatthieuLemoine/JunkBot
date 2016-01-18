@@ -2,8 +2,8 @@
 ## Junk Bot IA Ask process
 #####
 from datetime import datetime
-from conf import *
-from utils import *
+import conf.conf as conf
+import utils.utils as utils
 import bot.answer as answer
 
 def greetings():
@@ -17,7 +17,7 @@ def greetings():
     utils.jprint(greeting+' '+conf.adminName+'.\nHow are you today ?')
 
 def askCommand():
-    utils.jprint('How can I help you today ?')
+    utils.jprint('How can I help you ?')
 
 def askLoop():
     askCommand()
